@@ -1,0 +1,141 @@
+body{
+  background: #222831;
+  margin: 0;
+  font-family: sans-serif;
+}
+div>div:hover{
+  transform: scale(0.94);
+}
+nav{
+  background: #393e46;
+  height: 30px;
+  text-align: center;
+  padding: 10px;
+}
+nav a{
+  color: #00adb5;
+  margin-left: 0vw;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav h2{
+  margin-top: -1px;
+}
+nav a:hover{
+  border-bottom: 4px solid #00adb5;
+}
+main{
+  max-width: 800px;
+  margin: 0 auto;
+  border: 0px solid red;
+  display: block;
+}
+#about{
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+#img-div{
+}
+#me-img{
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+}
+#desc-self h2{
+  color: #00adb5;
+}
+#desc-self{
+  color: #fff;
+}
+.card-r{
+  background: #393e46;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  display: block;
+}
+.card-r h2{
+  color: #00adb5;
+}
+.card-r p{
+  color: #fff;
+}
+#card-parent{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+#card-parent>div{
+  width: 50vw;
+  margin-left: 10px;
+}
+.type-effect{
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+}
+@keyframes type{ 
+  from { width: 0; } 
+}
+footer{
+  text-align: center;
+  background: #393e46;
+  padding: 20px;
+  color: #fff;
+}
+footer a{
+  color: #00adb5;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+.filled-text{
+  background: #00adb5;
+  border-radius: 4px;
+  color: #393e46;
+  padding: 4px 6px 4px 6px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #393e46;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00adb5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00adb5
+}
+@media only screen and (max-width: 600px) {
+  #card-parent{
+    flex-direction: column;
+    display: block;
+    margin-bottom: 10px;
+  }
+  #card-parent>div{
+    width: 90%;
+    margin-left: -10px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+  }
+  footer{
+    margin-top: 10px;
+  }
+}
