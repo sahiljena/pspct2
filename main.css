@@ -41,6 +41,12 @@ main{
   width: 200px;
   border-radius: 50%;
   height: 200px;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  animation-name: img-beat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 #desc-self h2{
   color: #00adb5;
@@ -139,6 +145,17 @@ footer a:hover{
     margin-top: 10px;
   }
 }
+@keyframes img-beat {
+  25% {
+    transform: scale(0.94);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75%{
+    transform: scale(0.94);
+  }
+}
 #parent-loader{
   height: 100vh !important;
   width: 100%;
@@ -155,9 +172,3 @@ footer a:hover{
   height: 30px; 
   animation: spin 1s linear infinite; 
 } 
-          
-        @keyframes spin { 
-            100% { 
-                transform: rotate(360deg); 
-            } 
-        }
